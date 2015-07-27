@@ -20,7 +20,6 @@ def sakill(word, word_eol, userdata):
               hexchat.command("os akill add %s !T 24h You have violated foo's terms of service. "
                               "%s. If in error, please send an e-mail to foo@admin.com | %s" 
                               % (user, public_reason, private_reason))
-                              
               return hexchat.EAT_ALL
         except ValueError:
             hexchat.prnt("USAGE: /sakill  <nick|hostmask> <public reason> | <private oper reason>")
