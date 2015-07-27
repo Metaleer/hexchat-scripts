@@ -25,7 +25,7 @@ def msg_search(word, word_eol, userdata):
         if re.search(user_message) != None and channel == x and hexchat.get_info("network") == net:
             hexchat.command("mode %s +b *!*%s" % (channel, user_host))
             hexchat.command("kick %s regex pattern detected" % user_nickname)
-            break
+
             return hexchat.EAT_ALL
             
 def notice_search(word, word_eol, userdata):
@@ -41,7 +41,7 @@ def notice_search(word, word_eol, userdata):
         if re.search(user_message) != None and channel == x and hexchat.get_info("network") == net:
             hexchat.command("mode %s +b *!*%s" % (channel, user_host))
             hexchat.command("kick %s regex pattern detected" % user_nickname)
-            break
+
             return hexchat.EAT_ALL
 
 def unload_regexkb(userdata):
