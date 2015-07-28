@@ -8,6 +8,7 @@ __author__ = 'Daniel A. J.'
 # TODO:
 #   When ChanServ-type services are available, ask for ops if not opped
 #   If client is signed into account, ban accountname instead of host
+#   Watch for nick changes within channel(s) and not just channel joins
 
 import hexchat
 import re
