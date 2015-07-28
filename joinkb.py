@@ -5,6 +5,10 @@ __module_version__ = '0.1'
 __module_description__ = 'Kickbans clients from specified channels on regex match against their nickname on join'
 __author__ = 'Daniel A. J.'
 
+# TODO:
+#   When ChanServ-type services are available, ask for ops if not opped
+#   If client is signed into account, ban accountname instead of host
+
 import hexchat
 import re
 
