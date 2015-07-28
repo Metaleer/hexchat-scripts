@@ -1,5 +1,6 @@
 ## hexchat-scripts
 A bunch of HexChat scripts that probably no-one will use. :P
+There is a ```TODO``` list in the source for some scripts, check it out to see what's in store for the future.
 ###akill.py
 A simple script to make AKILLing easier without having to use the full services syntax.
 ```
@@ -17,4 +18,3 @@ The channels where the script is active is defined by the ```check_channels``` l
 For the moment being, you must be opped up for the script to work (it will not check if the client is unopped and then ask ChanServ for ops).
 ###joinkb.py
 Kickbans clients when their nicknames match a regex pattern on joining a specified set of channels on a specific network. As with ```regexkb.py```, ```net``` is not part of the ```005``` numeric reply but HexChat's own NETWORK value, and you must be opped up for the script to work.
-A future version may also check for nick changes within channels and take appropriate action.
