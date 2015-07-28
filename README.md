@@ -15,3 +15,6 @@ re = re.compile(r'\bfoo\b') # regex pattern to be matched against in user's mess
 The channels where the script is active is defined by the ```check_channels``` list.
 ```net``` defines the network to be checked, but bear in mind that this is HexChat's own NETWORK value, and it is *not* extracted from the ```005``` numeric reply sent by a ```VERSION``` request to the ircd.
 For the moment being, you must be opped up for the script to work (it will not check if the client is unopped and then ask ChanServ for ops).
+###joinkb.py
+Kickbans clients when their nicknames match a regex pattern on joining a specified set of channels on a specific network. As with ```regexkb.py```, ```net``` is not part of the ```005``` numeric reply but HexChat's own NETWORK value, and you must be opped up for the script to work.
+A future version may also check for nick changes within channels and take appropriate action.
